@@ -17,7 +17,7 @@ except (ImportError, IOError, RuntimeError) as e:
 
 setup(
     name="brother_ql",
-    version="0.9.2",
+    version="0.9.3",
     description="Python package to talk to Brother QL label printers",
     long_description=LDESC,
     author="Philipp Klaus",

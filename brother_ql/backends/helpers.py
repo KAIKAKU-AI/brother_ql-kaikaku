@@ -20,7 +20,7 @@ def discover(backend_identifier="linux_kernel"):
 
     be = backend_factory(backend_identifier)
     list_available_devices = be["list_available_devices"]
-    # BrotherQLBackend = be["backend_class"]
+    BrotherQLBackend = be["backend_class"]
 
     available_devices = list_available_devices()
     return available_devices
@@ -65,7 +65,7 @@ def send(
             selected_backend = "linux_kernel"
 
     be = backend_factory(selected_backend)
-    # list_available_devices = be["list_available_devices"]
+    list_available_devices = be["list_available_devices"]
     BrotherQLBackend = be["backend_class"]
 
     printer = BrotherQLBackend(printer_identifier)
