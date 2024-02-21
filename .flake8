@@ -1,0 +1,29 @@
+[flake8]
+
+# Keep McCabe complexity low to have simpler, more maintainable functions
+max-complexity = 10
+max-line-length = 120
+
+# Files and directories to exclude:
+exclude = 
+    .git,
+    __pycache__,
+    build,
+    dist,
+    .venv,
+    .env,
+    env,
+    venv,
+    ENV,
+    .pytest_cache,
+    migrations
+
+
+# Show source code for each error
+show-source = False
+
+# Count occurrences
+statistics = True
+
+# Enforce single quotes, change to double if you prefer
+inline-quotes = single
